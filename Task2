@@ -1,0 +1,29 @@
+
+#program 1
+a=10
+n1, n2 = 0, 1
+count = 0
+if a<= 0:
+   print("Please enter a positive integer")
+elif a == 1:
+   print("Fibonacci numbers upto",a,":")
+   print(n1)
+else:
+   print("Fibonacci numbers:")
+   while count < a:
+       print(n1)
+       nth = n1 + n2
+       n1 = n2
+       n2 = nth
+       count += 1
+       
+ #program 2
+ list1=[12,-7,5,64,-14]
+for num in list1: 
+    if num >= 0: 
+       print("\n",num, end = " ")
+
+list2=[12,14,-95,3]
+for num in list2: 
+    if num >= 0: 
+       print("\n",num, end = " ")
