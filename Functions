@@ -1,0 +1,13 @@
+
+r=str(input("Please enter a string:"))
+
+
+def most_frequent(r):
+    distinct = set(r)
+    dictionary = {}
+    for s in distinct:
+        num = len(r.split(s)) - 1
+        dictionary[num] = s
+    return dictionary
+
+print(most_frequent(r))
